@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NotesKeeper</string>
+
+
+    <string name="note_title">Note Title</string>
+    <string name="note">Note</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="add_new_category">ADD NEW CATEGORY</string>
+    <string name="enter_a_category_name">Enter a category name</string>
+    <string name="enter_category">Enter category</string>
+    <string name="exit">Exit</string>
+    <string name="want_to_leave">Do you want to Exit ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="category_saved">Category saved successfully!</string>
+    <string name="fill_fields">Fill all  fields!</string>
+    <string name="note_saved">Note saved!</string>
+    <string name="category_download_failed">Category data download failed!</string>
+    <string name="notes_download_failed">Notes download failed!</string>
+    <string name="note_removed">Note removed successfully</string>
+    <string name="wanna_delete_note">Are you sure you want to delete note:</string>
+
+
+</resources>

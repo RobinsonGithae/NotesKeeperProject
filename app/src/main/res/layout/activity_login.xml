@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN USER"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/colorBlue"
+        android:id="@+id/login"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/signupcontainer"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputlayoutBorderColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/LoginEmailETLyt"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:hint="Email"
+            app:endIconMode="clear_text"
+            app:errorTextColor="@color/colorRed"
+
+            app:hintTextColor="@color/colorGreen"
+            app:startIconDrawable="@drawable/ic_account"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETLoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputlayoutBorderColor"
+            android:id="@+id/ETLytLoginpasswordETLyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:focusable="true"
+            android:hint="Password"
+
+            app:endIconMode="password_toggle"
+            app:errorTextColor="@color/colorRed"
+            app:hintTextColor="@color/colorGreen"
+            app:startIconDrawable="@drawable/ic_password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETloginPswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHighlight="#F9CD0B" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/UsrNotRegTv"
+            android:layout_width="wrap_content"
+            android:text="Create Account"
+            android:textColor="@color/colorPrimaryDark2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginLeft="1dp"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="35dp"
+            android:fontFamily="cursive"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/forgotPasswrdTv"
+            android:layout_width="wrap_content"
+            android:text="Forgot password?"
+            android:textColor="@color/colorPrimaryDark2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginLeft="1dp"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="5dp"
+            android:fontFamily="cursive"
+            android:layout_height="wrap_content"/>
+
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LoginProgBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
